@@ -14,14 +14,16 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
   	<a-marker preset="hiro">
-            <a-image  src="./sofa1.png" width="1.6" height="0.8"></a-image>
-  	</a-marker>
-  	<a-entity rotation="90 0 0" camera >
         <a-animation attribute="rotation"
         dur="10000"
         fill="forwards"
         to="0 360 0"
-        repeat="indefinite"></a-animation>
+        repeat="indefinite">
+        <a-image  src="./sofa1.png" width="1.6" height="0.8"></a-image>
+      </a-animation>
+  	</a-marker>
+  	<a-entity rotation="90 0 0" camera >
+       
     </a-entity>
     </a-scene>
   </body>
