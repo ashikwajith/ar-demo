@@ -4,7 +4,10 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
- 	<a-image src="http://pngimg.com/uploads/sofa/sofa_PNG6968.png"></a-image>
+  	<a-marker preset="hiro">
+            <a-image src="http://pngimg.com/uploads/sofa/sofa_PNG6968.png"></a-image>
+  	</a-marker>
+  	<a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
