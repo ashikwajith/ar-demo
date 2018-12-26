@@ -5,7 +5,10 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
   	<a-marker preset="hiro">
-            <a-image src="http://pngimg.com/uploads/sofa/sofa_PNG6968.png"></a-image>
+<a-assets>
+    <img id="my-image" src="image.png">
+  </a-assets>
+            <a-image src="./sofa1.png"></a-image>
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
